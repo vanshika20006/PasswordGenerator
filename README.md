@@ -1,73 +1,61 @@
-# Welcome to your Lovable project
+# PasswordGenerator
 
-## Project info
+![GitHub](https://img.shields.io/github/license/username/repo)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/username/repo)
 
-**URL**: https://lovable.dev/projects/bea97266-1b15-4a74-85d7-8e07505ddec8
+A TypeScript password generator with a focus on security and usability.
 
-## How can I edit this code?
+## Key Features
 
-There are several ways of editing your application.
+- Generates secure passwords using customizable criteria
+- Built with TypeScript for type-safety and scalability
+- Utilizes modern UI components for an intuitive user experience
 
-**Use Lovable**
+## Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bea97266-1b15-4a74-85d7-8e07505ddec8) and start prompting.
+To install the PasswordGenerator, follow these steps:
 
-Changes made via Lovable will be committed automatically to this repo.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/username/PasswordGenerator.git
+   ```
 
-**Use your preferred IDE**
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Usage
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Here's how you can use the PasswordGenerator in your project:
 
-Follow these steps:
+1. Import the generator:
+   ```typescript
+   import { generatePassword } from 'password-generator';
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. Generate a password with specific criteria:
+   ```typescript
+   const password = generatePassword(12, true, true, true, false);
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Dependencies
 
-# Step 3: Install the necessary dependencies.
-npm i
+The PasswordGenerator project has the following dependencies:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- @hookform/resolvers: ^3.10.0
+- @radix-ui/react-accordion: ^1.2.11
+- @radix-ui/react-alert-dialog: ^1.1.14
+- ... (and many more)
 
-**Edit a file directly in GitHub**
+## Contributing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+If you would like to contribute to the project, please follow these guidelines:
+- Fork the repository
+- Create a new branch
+- Make your changes
+- Submit a pull request
 
-**Use GitHub Codespaces**
+## License
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/bea97266-1b15-4a74-85d7-8e07505ddec8) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
